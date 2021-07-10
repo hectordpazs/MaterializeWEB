@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VirtualShop</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Personal CSS-->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!--Icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    
+</head>
+
+<body>
+    <header>
+        <div class="navbar-fixed">
+            <nav class="#0d47a1 blue darken-4">
+                <div class="nav-wrapper">
+                  <a href="index.html" class="brand-logo">VirtualShop</a>
+                  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                  <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="playstation.html">PLAYSTATION</a></li>
+                    <li><a href="computadoras.html">COMPUTADORAS</a></li>
+                    <li><a href="accesorios.html">ACCESORIOS</a></li>
+                  </ul>
+                </div>
+              </nav>
+        </div>
+    
+        <ul class="sidenav #0d47a1 blue darken-4" id="mobile-demo">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="playstation.html">PLAYSTATION</a></li>
+            <li><a href="computadoras.html">COMPUTADORAS</a></li>
+            <li><a href="accesorios.html">ACCESORIOS</a></li>
+          </ul>
+    </header>
+
+    <main>
+        <div class="carousel carousel-slider center">
+            <div class="carousel-item #01579b light-blue darken-4 white-text" href="#one!">
+              <h2>Mouse Gamer</h2>
+              <p class="white-text">Precio: 55$</p>
+              <div class="img-container">
+                <img src="../img/gamer2.jpg" alt="">
+              </div>
+              <a class="btn waves-effect white grey-text darken-text-2 goButton" href="accesorios.html#mouse">Comprar</a>
+            </div>
+            <div class="carousel-item #00b8d4 cyan accent-4 white-text" href="#two!">
+              <h2>PC Gamer</h2>
+              <p class="white-text">Precio: 1500$</p>
+              <div class="img-container">
+                <img src="../img/pcGamer5.jpg" alt="">
+              </div>
+              <a href="computadoras.html#pc" class="btn waves-effect white grey-text darken-text-2 goButton">Comprar</a>
+            </div>
+            <div class="carousel-item green white-text" href="#three!">
+              <h2>Audifonos Gamer</h2>
+              <p class="white-text">Precio: 45$</p>
+              <div class="img-container">
+                <img src="../img/gamer1.jpg" alt="">
+              </div>
+              <a href="accesorios.html#audifonos" class="btn waves-effect white grey-text darken-text-2 goButton">Comprar</a>
+            </div>
+            <div class="carousel-item black white-text" href="#four!">
+              <h2>PlayStation 5</h2>
+              <p class="white-text">Precio: 500$</p>
+              <div class="img-container">
+                <img src="../img/PS5.jpeg" alt="">
+              </div>
+              <a href="playstation.html#ps5"class="btn waves-effect white grey-text darken-text-2 goButton">Comprar</a>
+            </div>
+          </div>
+    </main>
+
+    <footer class="page-footer #0d47a1 blue darken-4">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Contactanos</h5>
+              <p class="grey-text text-lighten-4">Puedes contactarnos y encontrarnos en nuestras redes sociales</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Redes Sociales</h5>
+              <ul class="footer-ul">
+                <li><a class="grey-text text-lighten-3" href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+                <li><a class="grey-text text-lighten-3" href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
+                <li><a class="grey-text text-lighten-3" href="https://twitter.com"><i class="fab fa-twitter-square"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container center">
+          © 2021 VirtualShop All Rights Reserved
+          </div>
+        </div>
+      </footer>
+    
+    
+
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+      <script>  
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        })
+      </script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.carousel');
+            //var instances = M.Carousel.init(elems, instance);
+            var instance = M.Carousel.init(elems,{
+            indicators: true,
+            duration: 1000
+            });
+        });
+        
+      </script>
+    
+        
+
+
+
+</body>
+</html>
